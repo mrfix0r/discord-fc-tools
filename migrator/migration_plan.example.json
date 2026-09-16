@@ -1,0 +1,270 @@
+{
+  "plan_version": 1,
+  "guild": {
+    "expected_id": "YOUR_DISCORD_SERVER_ID",
+    "expected_name": "FC"
+  },
+  "safety": {
+    "delete_channels": false,
+    "delete_roles": false,
+    "send_messages": false
+  },
+  "role_renames": [
+    {
+      "source": "FC old",
+      "target": "🏛 Ветеран FC"
+    },
+    {
+      "source": "Претендент",
+      "target": "ALBION • Претендент"
+    },
+    {
+      "source": "💪Претендент💪",
+      "target": "APEX • Претендент"
+    }
+  ],
+  "roles_to_create": [
+    {
+      "name": "🔴 Эфиры",
+      "color": 15158332
+    },
+    {
+      "name": "⚙️ RF Online",
+      "color": 3447003
+    },
+    {
+      "name": "⚔️ Состав FC",
+      "color": 15844367
+    },
+    {
+      "name": "🎮 Ищу группу",
+      "color": 5763719
+    },
+    {
+      "name": "ALBION • Архив",
+      "color": 9807270
+    },
+    {
+      "name": "APEX • Архив",
+      "color": 9807270
+    }
+  ],
+  "category_renames": [
+    {
+      "source": "Общие",
+      "target": "FC // START"
+    },
+    {
+      "source": "FC",
+      "target": "FC // СВОИ"
+    },
+    {
+      "source": "🏰 Sleeping Forest 🏰",
+      "target": "ARCHIVE // SLEEPING FOREST"
+    },
+    {
+      "source": "👊 FC 👊",
+      "target": "ARCHIVE // ALBION ALLIANCE"
+    },
+    {
+      "source": "📁Билды",
+      "target": "ARCHIVE // ALBION BUILDS"
+    },
+    {
+      "source": "For Only Strong (Apex) Role",
+      "target": "ARCHIVE // APEX — ONLY STRONG"
+    },
+    {
+      "source": "Для претендентов",
+      "target": "ARCHIVE // APEX — КАНДИДАТЫ"
+    }
+  ],
+  "categories_to_create": [
+    {
+      "name": "FC // ТАВЕРНА",
+      "preset": "public_category"
+    },
+    {
+      "name": "FC // LIVE",
+      "preset": "public_category"
+    },
+    {
+      "name": "⚙️ RF ONLINE",
+      "preset": "public_category"
+    }
+  ],
+  "category_order": [
+    "FC // START",
+    "FC // ТАВЕРНА",
+    "FC // LIVE",
+    "⚙️ RF ONLINE",
+    "FC // СВОИ",
+    "Для избранных",
+    "ARCHIVE // SLEEPING FOREST",
+    "ARCHIVE // ALBION ALLIANCE",
+    "ARCHIVE // ALBION BUILDS",
+    "ARCHIVE // APEX — ONLY STRONG",
+    "ARCHIVE // APEX — КАНДИДАТЫ"
+  ],
+  "channels_to_update": [
+    {
+      "source_category": "FC // START",
+      "source_name": "✋приветствие",
+      "target_category": "FC // START",
+      "target_name": "👋начать-здесь",
+      "position": 0,
+      "preset": "readonly_text",
+      "topic": "Коротко о сервере FC, стримах и переходе в RF Online."
+    },
+    {
+      "source_category": "FC // START",
+      "source_name": "🔔новости",
+      "target_category": "FC // START",
+      "target_name": "📢новости-fc",
+      "position": 1,
+      "preset": "readonly_text",
+      "topic": "Главные новости сообщества FC."
+    },
+    {
+      "source_category": "FC // START",
+      "source_name": "🚩получение-роли",
+      "target_category": "FC // START",
+      "target_name": "🎭выбор-ролей",
+      "position": 2,
+      "preset": "readonly_text",
+      "topic": "Выберите интересы: эфиры, RF Online, состав FC и поиск группы."
+    },
+    {
+      "source_category": "FC // START",
+      "source_name": "🐒флуд",
+      "target_category": "FC // ТАВЕРНА",
+      "target_name": "🍻таверна",
+      "position": 0,
+      "preset": "public_text",
+      "topic": "Главный живой чат сообщества FC."
+    },
+    {
+      "source_category": "FC // START",
+      "source_name": "🎬stream-bot",
+      "target_category": "FC // LIVE",
+      "target_name": "🔴эфиры",
+      "position": 0,
+      "preset": "readonly_text",
+      "topic": "Уведомления о старте стрима и ссылки на эфир."
+    },
+    {
+      "source_category": "FC // START",
+      "source_name": "🔥 Стрим ON🌱",
+      "target_category": "FC // LIVE",
+      "target_name": "🎙 Сбор перед стримом",
+      "position": 2,
+      "preset": "public_voice"
+    },
+    {
+      "source_category": "FC // START",
+      "source_name": "🔕🔇afk",
+      "target_category": "FC // ТАВЕРНА",
+      "target_name": "🔕 AFK",
+      "position": 3,
+      "preset": "public_voice"
+    }
+  ],
+  "channels_to_create": [
+    {
+      "category": "FC // ТАВЕРНА",
+      "name": "🎬моменты-со-стрима",
+      "type": "text",
+      "position": 1,
+      "preset": "public_text",
+      "topic": "Клипы, скриншоты и лучшие моменты со стримов."
+    },
+    {
+      "category": "FC // ТАВЕРНА",
+      "name": "🎮поиск-группы",
+      "type": "forum",
+      "position": 2,
+      "preset": "public_forum",
+      "topic": "Ищем пати и заранее собираемся на игровые активности.",
+      "tags": [
+        "RF Online",
+        "Другие игры",
+        "На стрим"
+      ]
+    },
+    {
+      "category": "FC // ТАВЕРНА",
+      "name": "🍻 Таверна",
+      "type": "voice",
+      "position": 2,
+      "preset": "public_voice"
+    },
+    {
+      "category": "FC // LIVE",
+      "name": "🗳решаем-на-стриме",
+      "type": "text",
+      "position": 1,
+      "preset": "public_text",
+      "topic": "Голосования и решения, которые влияют на следующий эфир."
+    },
+    {
+      "category": "⚙️ RF ONLINE",
+      "name": "📡rf-новости",
+      "type": "announcement",
+      "position": 0,
+      "preset": "readonly_text",
+      "topic": "Проверенные новости RF Online и планы FC."
+    },
+    {
+      "category": "⚙️ RF ONLINE",
+      "name": "🧭rf-штаб",
+      "type": "forum",
+      "position": 1,
+      "preset": "public_forum",
+      "topic": "Гайды, вопросы, экономика и подготовка FC к RF Online.",
+      "tags": [
+        "Вопрос",
+        "Гайд",
+        "Экономика",
+        "PvP",
+        "Гильдия"
+      ]
+    },
+    {
+      "category": "⚙️ RF ONLINE",
+      "name": "⚔️состав-fc",
+      "type": "text",
+      "position": 2,
+      "preset": "public_text",
+      "topic": "Набор, роли и координация будущего состава FC в RF Online."
+    },
+    {
+      "category": "⚙️ RF ONLINE",
+      "name": "⚙️ RF Online",
+      "type": "voice",
+      "position": 3,
+      "preset": "public_voice"
+    }
+  ],
+  "archive_categories": [
+    {
+      "name": "ARCHIVE // SLEEPING FOREST",
+      "access_role": "ALBION • Архив"
+    },
+    {
+      "name": "ARCHIVE // ALBION ALLIANCE",
+      "access_role": "ALBION • Архив"
+    },
+    {
+      "name": "ARCHIVE // ALBION BUILDS",
+      "access_role": "ALBION • Архив"
+    },
+    {
+      "name": "ARCHIVE // APEX — ONLY STRONG",
+      "access_role": "APEX • Архив"
+    },
+    {
+      "name": "ARCHIVE // APEX — КАНДИДАТЫ",
+      "access_role": "APEX • Архив"
+    }
+  ]
+}
